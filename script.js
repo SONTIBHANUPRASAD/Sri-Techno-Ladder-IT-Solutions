@@ -1,3 +1,59 @@
+// function openCourseStructure() {
+//   const newWindow = window.open('', '_blank', 'width=600,height=400');
+ 
+//   newWindow.document.close();
+// }
+// D:\Sri Techno Ladder IT Solutions\Course_Structure
+function openCourseStructure() {
+  const wordFileUrl = "Course_Structure/PHP_Training_Course_Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure1() {
+  const wordFileUrl = "Course_Structure/Selenium Course Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure2() {
+  const wordFileUrl = "Course_Structure/C Training Course Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+
+function openCourseStructure3() {
+  const wordFileUrl = "Course_Structure/Python.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+
+function openCourseStructure4() {
+  const wordFileUrl = "Course_Structure/Testing.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure5() {
+  const wordFileUrl = "Course_Structure/HTML JavaScript Training Course Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure6() {
+  const wordFileUrl = "Course_Structure/C++ Course Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure7() {
+  const wordFileUrl = "Course_Structure/Core Java Training Content Overview.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure8() {
+  const wordFileUrl = "Course_Structure/Unix.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure9() {
+  const wordFileUrl = "Course_Structure/MS.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure10() {
+  const wordFileUrl = "Course_Structure/SQL.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
+function openCourseStructure11() {
+  const wordFileUrl = "Course_Structure/Oracle.pdf"; // Replace with actual path or URL
+  window.open(wordFileUrl, '_blank');
+}
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu');
@@ -78,16 +134,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Form submission
-    const newsletterForm = document.querySelector('.newsletter form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const emailInput = this.querySelector('input[type="email"]');
-            if (emailInput.value) {
-                alert('Thank you for subscribing to our newsletter!');
-                emailInput.value = '';
-            }
-        });
-    }
 });
