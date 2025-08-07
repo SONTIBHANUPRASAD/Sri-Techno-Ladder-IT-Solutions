@@ -6,6 +6,7 @@
     <title>Sri Techno Ladder IT Solutions</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -39,10 +40,10 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <p style="font-size: 30px;"> Simply providing a student with a computer doesn't improve education-skilled professionals delivering 
+                <p style="font-size: 30px; color: #f30606;background-color: aqua;"> Simply providing a student with a computer doesn't improve education-skilled professionals delivering 
                     quality training does, which is what our Institute specializes in. 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                   <span style="color: rgb(37, 15, 235)"> We also provide Academic Projects for B.Tech., M.Tech., and MCA students. </span></p>
+                   <span style="color: rgb(9, 13, 240)"> We also provide Academic Projects for B.Tech., M.Tech., and MCA students. </span></p>
                 <!-- <div class="hero-buttons">
                     <a href="#" class="btn-primary">Explore Tours</a>
                     <a href="#" class="btn-secondary">Get a Quote</a>
@@ -57,31 +58,36 @@
 <section class="courses" id="Cources" style="background-color: rgb(155, 236, 230);">
     <div class="container">
         <h2 class="section-title">Courses</h2>
+        <p style="margin-bottom: 15px; font-size: 16px; color: #d41414;text-align: right;">
+           NOTE: 📘 To view the course structure, click on the course.
+        </p>
         <div class="courses-grid">
             <!-- Individual Course Cards -->
-            <div class="course-card">PHP</div>
-            <div class="course-card">Selenium Testing</div>
-            <div class="course-card">Manual Testing</div>
-            <div class="course-card">Tally</div>
-            <div class="course-card">Unix</div>
-            <div class="course-card">Computer Basics</div>
-            <div class="course-card">Big Data</div>
-            <div class="course-card">C Programming</div>
-            <div class="course-card">C++ Programming</div>
-            <div class="course-card">Database</div>
-            <div class="course-card">Digital Marketing</div>
-            <div class="course-card">Data Structures</div>
-            <div class="course-card">Pega</div>
-            <div class="course-card">HTML / CSS</div>
-            <div class="course-card">Python</div>
-            <div class="course-card">Java</div>
-            <div class="course-card">MS Office</div>
-            <div class="course-card">Oracle</div>
-            <div class="course-card">SQL</div>
-            <div class="course-card">Dot Net</div>
+            <div class="course-card" onclick="openCourseStructure()" style="background-image: url('images/PHP1.JPG'); width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px; cursor: pointer;"></div>
+            <div class="course-card" onclick="openCourseStructure1()" style="background-image: url('images/SE.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure4()" style="background-image: url('images/Manual-testing.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/Tally.png');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure8()" style="background-image: url('images/unix.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/Basic computer.png');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/Big\ data.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure2()" style="background-image: url('images/c.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure6()" style="background-image: url('images/CPP.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/DBMS.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/digital.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/DSA.JPG');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/PEGA.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure5()" style="background-image: url('images/html_css.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure3()" style="background-image: url('images/Python.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure7()" style="background-image: url('images/Java.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure9()" style="background-image: url('images/MS.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure11()" style="background-image: url('images/Oracle.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" onclick="openCourseStructure10()" style="background-image: url('images/sql.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
+            <div class="course-card" style="background-image: url('images/Dot\ net.jpg');width: 280px; height: 125px; background-size: cover; background-position: center; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px;"></div>
         </div>
     </div>
 </section>
+
+
 
 
    <!-- Faculty Section -->
@@ -114,17 +120,17 @@
                 <tbody>
                     <tr>
                         <td>1.</td>
-                        <td class="faculty-name">Dr. K Venkateswara Rao M.Tech., Ph.D</td>
+                        <td class="faculty-name">Dr. A Suresh Babu M.Tech., Ph.D</td>
                         <td>3 years of Industrial Experience and 13 years of Teaching experience. Worked as an HOD and Assoc. Professor in VLIT's College of Engineering and Technology</td>
                     </tr>
                     <tr>
                         <td>2.</td>
-                        <td class="faculty-name">B. Murali Krishna M.Tech.</td>
+                        <td class="faculty-name">Mr. S.Bhanu Prasad M.Tech.</td>
                         <td>5 years of Industrial experience and 10 years of Teaching experience. Worked as Asst. Professor in VLIT's Engineering College and Salesforce Developer in Global Logics Software Solutions.</td>
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td class="faculty-name">S Bhanu Prasad M.Tech.</td>
+                        <td class="faculty-name">Mr. A Siva Rao M.Tech.</td>
                         <td>1 years of Teaching experience as an Asst. Professor and 3 years of industrial experience</td>
                     </tr>
                     <tr>
